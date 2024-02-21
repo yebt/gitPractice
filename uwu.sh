@@ -23,6 +23,7 @@ done
 
 printMessg(){
     printf "|%3s| UWU |\n" "$1"
+    echo   "----------"
 }
 
 if [[ -z "$NREP" ]];then
