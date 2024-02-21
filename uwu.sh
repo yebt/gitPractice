@@ -22,13 +22,14 @@ while getopts ":n:" opt; do
 done
 
 printMessg(){
-    echo "UWU ->" $1
+    printf "|%3s| UWU |\n" "$1"
 }
 
 if [[ -z "$NREP" ]];then
     NREP=1
 fi
 
+echo "-----------"
 for (( n=1; n<=$NREP; n++ ))
 do
     printMessg $n
